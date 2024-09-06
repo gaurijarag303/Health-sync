@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" th:href="@{/css/homestyles.css}" />
+    <title> HealthSync</title>
+  </head>
+  <body>
+    <header>
+      <nav class="section__container nav__container">
+        <div class="nav__logo">Health<span>Sync</span></div>
+        <ul class="nav__links">
+         <li class="link"><a href="#home">Home</a></li>
+          <li class="link"><a href="#about">About Us</a></li>
+          <li class="link"><a href="#service">Services</a></li>
+          <li class="link"><a href="#pages">Pages</a></li>
+          <li class="link"><a href="#blog">Blog</a></li>
+        </ul>
+        <a th:href="@{/login}" class="btn">Sign In</a>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__content">
+          <h1>Your Family's Medical Records Hub</h1>
+          <p>
+            Easily store and access your family's medical documents and prescriptions in a secure environment. 
+            We prioritize your privacy and ensure that managing health information is straightforward and stress-free.
+          </p>
+          <button class="btn">See Services</button>
+        </div>
+        <div class="header__form">
+          <form>
+            <h4>Sign Up</h4>
+            <input type="text" placeholder="Username" />
+            <input type="text" placeholder="E mail" />
+            <input type="text" placeholder="phone No." />
+            <input type="text" placeholder="Password" />
+            <input type="text" placeholder="Confirm Password" />
+            <button class="btn form__btn">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container service__container" id="service">
+      <div class="service__header">
+        <div class="service__header__content">
+          <h2 class="section__header">Your Health, Our Priority</h2>
+          <p>
+            We are committed to delivering an exceptional service that goes beyond secure storage.
+             Our platform is designed to cater to your unique requirements, 
+            ensuring your medical documents and prescriptions are always organized and readily accessible.
+          </p>
+        </div>
+        <button class="service__btn">Ask A Service</button>
+      </div>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-microscope-line"></i></span>
+          <h4>Laboratory Test</h4>
+          <p>
+            Accurate Diagnostics, Swift Results: Experience top-notch Laboratory
+            Testing at our facility.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-mental-health-line"></i></span>
+          <h4>Health Check</h4>
+          <p>
+            Our thorough assessments and expert evaluations help you stay
+            proactive about your health.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-hospital-line"></i></span>
+          <h4>General Dentistry</h4>
+          <p>
+            Experience comprehensive oral care with Dentistry. Trust us to keep
+            your smile healthy and bright.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section class="section__container about__container" id="about">
+      <div class="about__content">
+        <h2 class="section__header">About Us</h2>
+        <p>
+          Welcome to HealthSync, your one-stop solution for securely managing and storing your family's medical records, prescriptions, 
+          and vital health information. In an era where digital transformation is reshaping industries, 
+          we are bringing the healthcare sector into the future with our innovative platform.
+        </p>
+        <p>
+          Our platform is designed to meet the evolving needs of modern healthcare. 
+          With HealthSync, you can easily organize and retrieve your medical information,
+           ensuring that critical data is always within reach. Our service includes features such as real-time 
+           updates for healthcare professionals, online appointment scheduling, and personalized health notifications.
+        </p>
+        <p>
+          At HealthSync, we believe that streamlined access to health information empowers individuals and improves overall well-being. 
+          Our mission is to support you in managing your health with confidence and ease, making a positive impact on your everyday life. 
+          Join us in embracing the future of healthcare, where your health information is secure, accessible, and efficiently managed.
+        </p>
+      </div>
+      <div class="about__image">
+        <img src="assets/docs1.jpg" alt="about" />
+      </div>
+    </section>
+
+    <section class="section__container why__container" id="blog">
+      <div class="why__image">
+        <img src="assets/docs3.jpg" alt="why choose us" />
+      </div>
+      <div class="why__content">
+        <h2 class="section__header">Why Choose Us</h2>
+        <p>
+          Our commitment to efficiency and accessibility ensures you have the best tools at 
+          your disposal for a seamless healthcare experience.
+        </p>
+        <div class="why__grid">
+          <span><i class="ri-hand-heart-line"></i></span>
+          <div>
+            <h4>Intensive Care</h4>
+            <p>
+              Our Intensive Care Unit is equipped with advanced technology and
+              staffed by team of professionals
+            </p>
+          </div>
+          <span><i class="ri-truck-line"></i></span>
+          <div>
+            <h4>Free Ambulance Car</h4>
+            <p>
+              A compassionate initiative to prioritize your health and
+              well-being without any financial burden.
+            </p>
+          </div>
+          <span><i class="ri-hospital-line"></i></span>
+          <div>
+            <h4>Medical and Surgical</h4>
+            <p>
+              Our Medical and Surgical services offer advanced healthcare
+              solutions to address medical needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Health<span>Care</span></h3>
+          <p>
+            We are honored to be a part of your healthcare journey and committed
+            to delivering compassionate, personalized, and top-notch care every
+            step of the way.
+          </p>
+          <p>
+            Trust us with your health, and let us work together to achieve the
+            best possible outcomes for you and your loved ones.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>About Us</h4>
+          <p>Home</p>
+          <p>About Us</p>
+          <p>Work With Us</p>
+          <p>Our Blog</p>
+          <p>Terms & Conditions</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <p>Search Terms</p>
+          <p>Advance Search</p>
+          <p>Privacy Policy</p>
+          <p>Suppliers</p>
+          <p>Our Stores</p>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="ri-map-pin-2-fill"></i> 123, London Bridge Street, London
+          </p>
+          <p><i class="ri-mail-fill"></i> support@care.com</p>
+          <p><i class="ri-phone-fill"></i> (+012) 3456 789</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <p> All rights reserved.</p>
+          <div class="footer__socials">
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
